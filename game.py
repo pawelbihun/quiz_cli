@@ -7,7 +7,7 @@ class Game:
     def __init__(self):
         self.questions_list: list = []
         self.score: int = 0
-        self.player_name: str = 'No name'
+        self.player_name: str = 'Nameless player'
 
     def are_questions_loaded(self) -> bool:
         if len(self.questions_list) > 0:
