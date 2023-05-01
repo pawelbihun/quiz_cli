@@ -33,6 +33,7 @@ class Game:
     def run(self):
         if self.are_questions_loaded():
             print('\n>>>QUIZ START<<<')
+            self.player_name = input('Type your name: ')
             random.shuffle(self.questions_list)
             self.count_questions_list()
             for count, question in enumerate(self.questions_list, start=1):
@@ -45,7 +46,6 @@ class Game:
                     self.wrong_answers_list.append(question)
 
             print('QUIZ END\n')
-            self.player_name = input('Type your name: ')
             print(f'\n{self.player_name} you scored {self.score} out of {self.count_questions}')
             if self.score == self.count_questions:
                 print('Congratulation! You answered all the questions correctly. Well done!\n\n')
@@ -54,7 +54,8 @@ class Game:
                 for question in self.wrong_answers_list:
                     question.show_with_player_answer()
             elif self.score == 0:
-                print('You are loser, did not earn any points :(')
+                print('You are loser, did not earn any points :(\n'
+                      'There are right answers:')
                 for question in self.wrong_answers_list:
                     question.show_with_player_answer()
 
