@@ -1,3 +1,4 @@
+import os
 import random
 
 from question import Question
@@ -15,6 +16,9 @@ class Game:
         if len(self.questions_list) > 0:
             return True
         return False
+
+    def clear_console(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
 
     def count_questions_list(self) -> None:
         self.count_questions = len(self.questions_list)
@@ -37,6 +41,7 @@ class Game:
             random.shuffle(self.questions_list)
             self.count_questions_list()
             for count, question in enumerate(self.questions_list, start=1):
+                self.clear_console()
                 question.show_with_answers(count)
                 answer = input('Your answer: ')
                 if self.is_score_granted(answer, question.right_answer):
@@ -44,6 +49,7 @@ class Game:
                 else:
                     question.add_player_answer_to_question(answer)
                     self.wrong_answers_list.append(question)
+            self.clear_console()
 
             print('QUIZ END\n')
             print(f'\n{self.player_name} you scored {self.score} out of {self.count_questions}')

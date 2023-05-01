@@ -9,6 +9,7 @@ if __name__ == '__main__':
 
         game = Game()
         game.load_questions(data)
+        game.clear_console()
         game.run()
 
     except FileNotFoundError:
