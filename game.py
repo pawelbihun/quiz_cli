@@ -35,35 +35,39 @@ class Game:
         return False
 
     def run(self):
-        if self.are_questions_loaded():
-            print('\n>>>QUIZ START<<<')
-            self.player_name = input('Type your name: ')
-            random.shuffle(self.questions_list)
-            self.count_questions_list()
-            for count, question in enumerate(self.questions_list, start=1):
+        try:
+            if self.are_questions_loaded():
+                print('\n>>>QUIZ START<<<')
+                self.player_name = input('Type your name: ')
+                random.shuffle(self.questions_list)
+                self.count_questions_list()
+                for count, question in enumerate(self.questions_list, start=1):
+                    self.clear_console()
+                    question.show_with_answers(count)
+                    answer = input('Your answer: ')
+                    if self.is_score_granted(answer, question.right_answer):
+                        self.score += 1
+                    else:
+                        question.add_player_answer_to_question(answer)
+                        self.wrong_answers_list.append(question)
                 self.clear_console()
-                question.show_with_answers(count)
-                answer = input('Your answer: ')
-                if self.is_score_granted(answer, question.right_answer):
-                    self.score += 1
-                else:
-                    question.add_player_answer_to_question(answer)
-                    self.wrong_answers_list.append(question)
-            self.clear_console()
 
-            print('QUIZ END\n')
-            print(f'\n{self.player_name} you scored {self.score} out of {self.count_questions}')
-            if self.score == self.count_questions:
-                print('Congratulation! You answered all the questions correctly. Well done!\n\n')
-            elif self.count_questions > self.score > 0:
-                print(f'{self.player_name} you made some mistakes, here they are:')
-                for question in self.wrong_answers_list:
-                    question.show_with_player_answer()
-            elif self.score == 0:
-                print('You are loser, did not earn any points :(\n'
-                      'There are right answers:')
-                for question in self.wrong_answers_list:
-                    question.show_with_player_answer()
+                print('QUIZ END\n')
+                print(f'\n{self.player_name} you scored {self.score} out of {self.count_questions}')
+                if self.score == self.count_questions:
+                    print('Congratulation! You answered all the questions correctly. Well done!\n\n')
+                elif self.count_questions > self.score > 0:
+                    print(f'{self.player_name} you made some mistakes, here they are:')
+                    for question in self.wrong_answers_list:
+                        question.show_with_player_answer()
+                elif self.score == 0:
+                    print('You are loser, did not earn any points :(\n'
+                          'There are right answers:')
+                    for question in self.wrong_answers_list:
+                        question.show_with_player_answer()
 
-        else:
-            print('no data loaded')
+            else:
+                print('no data loaded')
+
+        except KeyboardInterrupt:
+            print('\n\nDetected CTRL+C... Quiz over')
