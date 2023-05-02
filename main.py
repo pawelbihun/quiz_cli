@@ -1,3 +1,6 @@
+"""This is main script of quiz.
+It tries open a json-format file with a questions and starts a game"""
+
 import json
 from game import Game
 

@@ -1,16 +1,21 @@
+"""This script contains Question class"""
+
+
 class Question:
-    answers_letters_list = ['a', 'b', 'c', 'd']
-    player_answer = ''
+    """The class contains fields with the content of the question, possible answers,
+    the correct and chosen by the player answer"""
+    answers_letters_list: list = ['a', 'b', 'c', 'd']
+    player_answer: str = ''
 
     def __init__(self,
                  question: str,
                  answers: list,
                  right_answer: str):
-        self.question = question
-        self.answers = answers
-        self.right_answer = right_answer
+        self.question: str = question
+        self.answers: list = answers
+        self.right_answer: str = right_answer
 
-    def show_with_answers(self, number_of_question) -> None:
+    def show_with_answers(self, number_of_question: int) -> None:
         print('\n', number_of_question, self.question)
         answers = (tuple(zip(self.answers_letters_list, self.answers)))
         for letter, answer in answers:

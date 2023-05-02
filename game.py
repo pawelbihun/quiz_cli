@@ -1,10 +1,11 @@
+"""This script contains Game class"""
 import os
 import random
-
 from question import Question
 
 
 class Game:
+    """The class contains fields and methods to handle the quiz"""
     def __init__(self):
         self.questions_list: list = []
         self.score: int = 0
@@ -17,24 +18,25 @@ class Game:
             return True
         return False
 
-    def clear_console(self):
+    @staticmethod
+    def clear_console() -> None:
         os.system('cls' if os.name == 'nt' else 'clear')
 
     def count_questions_list(self) -> None:
         self.count_questions = len(self.questions_list)
 
-    def load_questions(self, data: list):
+    def load_questions(self, data: list) -> None:
         for obj in data:
             question = Question(obj['question'], obj['answers'], obj['right_answer'])
             self.questions_list.append(question)
 
     @staticmethod
-    def is_score_granted(answer, right_answer) -> bool:
+    def is_score_granted(answer: str, right_answer: str) -> bool:
         if answer.lower() == right_answer.lower():
             return True
         return False
 
-    def run(self):
+    def run(self) -> None:
         try:
             if self.are_questions_loaded():
                 print('\n>>>QUIZ START<<<')
