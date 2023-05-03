@@ -26,7 +26,7 @@ class Question:
         answers = (tuple(zip(self.answers_letters_list, self.answers)))
         for letter, answer in answers:
             print(f'{letter}: {answer}')
-        print(f'Right answer: {self.right_answer}\t\tYour answer: {self.player_answer}')
+        print(f'Right answer: {self.right_answer}\t\tYour answer: {self.player_answer}\n')
 
     def add_player_answer_to_question(self, player_answer: str) -> None:
         self.player_answer = player_answer

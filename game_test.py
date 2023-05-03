@@ -18,6 +18,7 @@ class TestGame:
         assert game.player_name == 'Nameless player'
         assert game.wrong_answers_list == []
         assert game.count_questions == 0
+        assert game.quizzes == []
 
     def test_is_score_granted_with_correct_lowercase_answer(self, game, right_answer_a):
         answer = 'a'
