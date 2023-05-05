@@ -46,14 +46,14 @@ class Game:
 
     def run(self) -> None:
         if self.are_questions_loaded():
-            print('\n>>>QUIZ START<<<\nPress CTRL+C to quit\n')
-            self.player_name = input('Type your name: ')
+            print('\n >>>QUIZ START<<<\n Press CTRL+C to quit\n')
+            self.player_name = input(' Type your name: ')
             random.shuffle(self.questions_list)
             self.count_questions_list()
             for count, question in enumerate(self.questions_list, start=1):
                 self.clear_console()
                 question.show_with_answers(count)
-                answer = input('Your answer: ')
+                answer = input('\n\n Your answer: ')
                 if self.is_score_granted(answer, question.right_answer):
                     self.score += 1
                 else:
@@ -61,8 +61,8 @@ class Game:
                     self.wrong_answers_list.append(question)
             self.clear_console()
 
-            print('QUIZ END\n')
-            print(f'\n{self.player_name} you scored {self.score} out of {self.count_questions}')
+            print(' QUIZ END\n')
+            print(f' \n{self.player_name} you scored {self.score} out of {self.count_questions}')
             if self.score == self.count_questions:
                 print('Congratulation! You answered all the questions correctly. Well done!\n\n')
             elif self.count_questions > self.score > 0:
@@ -70,11 +70,11 @@ class Game:
                 for question in self.wrong_answers_list:
                     question.show_with_player_answer()
             elif self.score == 0:
-                print('You are loser, did not earn any points :(\n'
-                      'There are right answers:')
+                print(' You are loser, did not earn any points :(\n'
+                      ' There are right answers:')
                 for question in self.wrong_answers_list:
                     question.show_with_player_answer()
-            print('Press any key to continue...')
+            print(' Press any key to continue...')
             input('')
 
         else:
@@ -88,8 +88,8 @@ class Game:
                 if item.endswith('.json'):
                     self.quizzes.append(item)
         except FileNotFoundError:
-            print('No such file or directory, please create or download "test_questions.json" file.'
-                  '\nMore details at README file')
+            print(' No such file or directory, please create or download "test_questions.json" file.'
+                  '\n More details at README file')
 
     def select_a_quiz(self) -> int:
         while True:
