@@ -88,7 +88,7 @@ class Game:
                 if item.endswith('.json'):
                     self.quizzes.append(item)
         except FileNotFoundError:
-            print('No such file or directory, please create or download "questions.json" file.'
+            print('No such file or directory, please create or download "test_questions.json" file.'
                   '\nMore details at README file')
 
     def select_a_quiz(self) -> int:
