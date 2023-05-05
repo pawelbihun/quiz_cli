@@ -1,12 +1,402 @@
 [
   {
-    "question": "Test question 1",
+    "question": "Która z poniższych odpowiedzi opisuje warunek testowy?",
     "answers": [
-      "answer A",
-      "answer B",
-      "answer C",
-      "answer D"
+      "Wyróżniający atrybut modułu lub systemu.",
+      "Testowalny aspekt modułu lub systemu zidentyfikowany jako podstawa testowania.",
+      "Stopień, w jakim oprogramowanie zapewnia wykonywanie funkcji spełniających określone i domniemane potrzeby, gdy oprogramowanie jest używane w określonych warunkach.",
+      "Przypadki testowe zaprojektowane w celu wykonywania kombinacji warunków i wynikających z nich działań."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Która z poniższych odpowiedzi prawidłowo wyraża jeden z celów testowania?",
+    "answers": [
+      "Testy powinny rozpoczynać się tak późno, jak to tylko możliwe, aby programiści mieli wystarczająco dużo czasu na stworzenie dobrego produktu.",
+      "Sprawdzenie, czy obiekt testowy działa zgodnie z oczekiwaniami użytkowników i innych interesariuszy.",
+      "Potwierdzenie, że zidentyfikowano wszystkie możliwe defekty.",
+      "Potwierdzenie, że ewentualne nieusunięte defekty nie spowodują żadnych awarii."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Które z poniższych stwierdzeń poprawnie opisuje różnicę między testowaniem a debugowaniem?",
+    "answers": [
+      "Testowanie polega na identyfikowaniu źródeł defektów, a debugowanie — na analizowaniu usterek i proponowaniu działań prewencyjnych.",
+      "Testowanie dynamiczne pozwala wskazać awarie spowodowane przez defekty, a debugowanie polega na usuwaniu defektów, które są przyczyną awarii.",
+      "Testowanie usuwa usterki, a debugowanie usuwa defekty, które powodują usterki.",
+      "Testowanie dynamiczne ma na celu zapobieganie wystąpieniu przyczyn awarii, a debugowanie polega na usuwaniu awarii."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Która z poniższych odpowiedzi opisujących typowe sytuacje zaistniałe podczas testowania lub eksploatacji opisuje awarię?",
+    "answers": [
+      "Produkt przestał działać po wybraniu przez użytkownika jednej z opcji w oknie dialogowym.",
+      "W kompilacji uwzględniono niewłaściwą wersję jednego z plików kodu źródłowego.",
+      "Algorytm obliczeniowy korzystał z niewłaściwych zmiennych wejściowych.",
+      "Programista błędnie zinterpretował jedno z wymagań dotyczących algorytmu."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Pan Testerski testował aplikację mobilną przez ostatnie 5 lat. Ma on bogate doświadczenie w tego typu testach i osiąga lepsze wyniki w krótszym czasie niż inni testerzy. Przez długi czas pan Testerski nie modyfikował istniejących testów automatycznych, ani nie tworzył żadnych nowych przypadków testowych. Spowodowało to, że podczas wykonywania istniejących testów znajdowano coraz mniej defektów. Której zasady testowania NIE przestrzegał pan Testerski?",
+    "answers": [
+      "Testowanie zależy od kontekstu.",
+      "Testowanie gruntowne jest niemożliwe.",
+      "Powtarzanie tych samych testów nie wykrywa nowych defektów.",
+      "Kumulowanie się defektów."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Testowanie może być elementem zapewnienia jakości, ponieważ:",
+    "answers": [
+      "Gwarantuje, że wymagania są dostatecznie szczegółowe.",
+      "Zmniejsza ryzyko powstania niskiej jakości oprogramowania.",
+      "Gwarantuje przestrzeganie standardów w organizacji.",
+      "Pozwala zmierzyć jakość oprogramowania w kategorii liczby wykonanych przypadków testowych."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Które z poniższych działań jest częścią etapu procesu testowego „analiza testów” w procesie testowym?",
+    "answers": [
+      "Zidentyfikowanie wszystkich niezbędnych narzędzi i elementów infrastruktury.",
+      "Utworzenie zestawów testów na podstawie skryptów testowych.",
+      "Przeanalizowanie zdobytych doświadczeń w celu udoskonalenia procesu.",
+      "Dokonanie oceny podstawy testów pod kątem testowalności."
     ],
     "right_answer": "d"
   },
+    {
+    "question": "Powiąż poniższe produkty pracy związanymi z testowaniem (1–4), z odpowiednimi opisami (AD).\n1. Zestaw testów.\n2. Przypadek testowy.\n3. Procedura testowa.\n4. Karta opisu testu.\nA. Grupa skryptów testowych lub harmonogram wykonania testów.\nB. Zbiór instrukcji wykonujących test.\nC. Wykaz oczekiwanych rezultatów.\nD. Dokument opisujący cel testów i możliwe pomysły na ich wykonanie",
+    "answers": [
+      "1A, 2C, 3B, 4D",
+      "1D, 2B, 3A, 4C",
+      "1A, 2C, 3D, 4B",
+      "1D, 2C, 3B, 4A"
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "W jakim celu można zastosować testowanie białoskrzynkowe na etapie testowania akceptacyjnego przez użytkownika?",
+    "answers": [
+      "Aby sprawdzić, czy między integrowanymi systemami można przesyłać duże ilości danych.",
+      "Aby sprawdzić, czy zostały wykonane wszystkie instrukcje kodu i ścieżki decyzyjne w kodzie.",
+      "Aby sprawdzić, czy zostały pokryte wszystkie przepływy pracy związane z procesami.",
+      "Aby zapewnić pełne pokrycie nawigacji na stronach internetowych."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Które z poniższych stwierdzeń porównujących testowanie modułowe z testowaniem systemowym jest PRAWDZIWE?",
+    "answers": [
+      "Testowanie modułowe służy do weryfikowania funkcjonalności modułów oprogramowania, obiektów programów i klas, które można przetestować oddzielnie, natomiast testowanie systemowe pozwala zweryfikować interfejsy między modułami oraz interakcje między poszczególnymi częściami systemu.",
+      "Przypadki testowe do testowania modułowego tworzy się zwykle na podstawie specyfikacji modułów, specyfikacji projektowych lub modeli danych, natomiast przypadki testowe do testowania systemowego wyprowadza się zwykle ze specyfikacji wymagań, specyfikacji funkcjonalnych lub przypadków użycia",
+      "Testowanie modułowe skupia się wyłącznie na charakterystykach funkcjonalnych, natomiast testowanie systemowe skupia się na charakterystykach funkcjonalnych i niefunkcjonalnych.",
+      "Za testowanie modułowe odpowiadają testerzy, natomiast za testowanie systemowe zwykle odpowiadają użytkownicy systemu"
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Które z poniższych stwierdzeń jest zgodne z prawdą?",
+    "answers": [
+      "Celem testów regresji jest sprawdzenie, czy poprawka została zaimplementowana pomyślnie, a celem testowania potwierdzającego jest upewnienie się, że wprowadzenie poprawki nie pociąga za sobą skutków ubocznych.",
+      "Celem testowania regresji jest wykrycie niezamierzonych skutków ubocznych, a celem testów potwierdzających jest sprawdzenie, czy system nadal działa w nowym środowisku.",
+      "Celem testów regresji jest wykrycie niezamierzonych skutków ubocznych, a celem testowania potwierdzającego jest sprawdzenie, czy pierwotnie wykryty defekt został usunięty.",
+      "Celem testów regresji jest sprawdzenie, czy nowa funkcjonalność działa, a celem testowania potwierdzającego jest sprawdzenie, czy pierwotnie wykryty defekt został usunięty."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Która z poniższych odpowiedzi zawiera NAJLEPSZĄ definicję modelu przyrostowego?",
+    "answers": [
+      "Definiowanie wymagań, projektowanie oprogramowania i testowanie odbywają się w szeregu cykli wytwarzania oprogramowania, przy czym w każdym cyklu dodawany jest fragment systemu.",
+      "Każda faza procesu wytwarzania oprogramowania powinna rozpoczynać się po zakończeniu poprzedniej fazy.",
+      "Testowanie jest postrzegane jako odrębna faza procesu wytwarzania, wykonywana po zakończeniu fazy implementacji.",
+      "Testowanie jest dodawane do zakresu prac programistycznych jako element przyrostowy."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Które z poniższych zdarzeń NIE powinno uruchamiać testowania pielęgnacyjnego?",
+    "answers": [
+      "Decyzja o przetestowaniu utrzymywalności oprogramowania.",
+      "Decyzja o przetestowaniu systemu po migracji na nową platformę operacyjną.",
+      "Decyzja o przeprowadzeniu testów w celu sprawdzenia, czy istnieje możliwość przywrócenia zarchiwizowanych danych.",
+      "Decyzja o przeprowadzeniu testów po wprowadzeniu doraźnych poprawek (ang. hotfix)."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Która z poniższych odpowiedzi przedstawia role występujące w przeglądzie formalnym?",
+    "answers": [
+      "Programista, moderator, lider przeglądu, przeglądający, tester.",
+      "Autor, moderator, kierownik, przeglądający, programista.",
+      "Autor, kierownik, lider przeglądu, przeglądający, projektant.",
+      "Autor, moderator, lider przeglądu, przeglądający, protokolant."
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Jakie działania są przeprowadzane w ramach planowania przeglądu formalnego?",
+    "answers": [
+      "Zbieranie metryk na potrzeby oceny efektywności przeglądu.",
+      "Odpowiadanie na pytania, jakie mogą mieć uczestnicy przeglądu.",
+      "Weryfikacja kryteriów wejścia dla przeglądu.",
+      "Ocena wyników przeglądu pod kątem spełnienia kryteriów zakończenia."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Który z poniższych typów przeglądów NAJLEPIEJ sprawdzi się w sytuacji, w której przegląd musi zostać przeprowadzony zgodnie z formalnym procesem opartym na regułach i listach kontrolnych?",
+    "answers": [
+      "Przegląd nieformalny.",
+      "Przegląd techniczny.",
+      "Inspekcja.",
+      "Przejrzenie."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Które z poniższych stwierdzeń dotyczących testowania statycznego jest NAJBARDZIEJ prawdziwe.",
+    "answers": [
+      "Testowanie statyczne jest tanim sposobem wykrywania i usuwania defektów.",
+      "Testowanie statyczne ułatwia późniejsze testowanie dynamiczne.",
+      "Testowanie statyczne umożliwia wykrycie problemów związanych z wykonywaniem kodu na wczesnym etapie cyklu życia oprogramowania.",
+      "W przypadku testowania systemu krytycznego ze względów bezpieczeństwa testowanie statyczne ma mniejszą wartość, ponieważ testowanie dynamiczne pozwala skuteczniej wykryć defekty."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Jesteś zaproszony do udziału w przeglądzie opisu wewnętrznego procesu tworzenia\ndokumentów. Celem tego opisu jest przedstawienie podziału pracy pomiędzy osobami\npełniącymi różne role i zaangażowane w proces w sposób, który będzie zrozumiały dla\nwszystkich. Przegląd jest oparty na następującej liście kontrolnej:\ni. Czy dla każdej czynności zdefiniowano w jasny sposób osobę ją wykonującą?\nii. Czy dla każdej czynności zdefiniowano w jasny sposób kryteria wejścia?\niii. Czy dla każdej czynności zdefiniowano w jasny sposób kryteria wyjścia?\niv. Czy dla każdej czynności zdefiniowano w jasny sposób role wspierające i ich zakres\nodpowiedzialności?\nPrzeglądowi opartemu na tej liście poddawany jest następujący fragment dokumentu:\n„Po sprawdzeniu kompletności i poprawności dokumentacji klienta architekt\noprogramowania tworzy specyfikację systemu. Gdy architekt oprogramowania ukończy\nspecyfikację systemu, zaprasza testerów i weryfikatorów do przeglądu. Lista kontrolna opisuje\nzakres przeglądu. Każdy zaproszony recenzent tworzy - w razie potrzeby - komentarze do\nprzeglądu i kończy przegląd oficjalnym komentarzem „gotowe”.\nKtóre z poniższych uwag z Twojej recenzji są poprawne?",
+    "answers": [
+      "Punkt ii). listy kontrolnej został naruszony, ponieważ nie jest jasne, jaki warunek musi być spełniony, aby zaprosić kogoś do przeglądu.",
+      "Zauważasz, że poza testerem i osobą weryfikującą należy również zaprosić osobę walidującą. Ponieważ ten element nie jest częścią Twojej listy kontrolnej, nie zapisujesz odpowiedniej uwagi w swoim raporcie.",
+      "Punkt iii). listy kontrolnej został naruszony, ponieważ nie jest jasne, co powoduje, że przegląd ma być uznany za ukończony.",
+      "Punkt i). listy kontrolnej został naruszony, ponieważ nie jest jasne, kto ma dostarczyć listę kontrolną przeglądającym."
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Testowanie w oparciu o listę kontrolną to:",
+    "answers": [
+      "Technika testowania, w której testy są wyprowadzane w oparciu o wiedzę testera na temat przeszłych awarii lub generalną wiedzę o trybach możliwych awarii.",
+      "Technika testowa oparta o analizę specyfikacji modułu lub systemu.",
+      "Technika projektowania testów oparta na doświadczeniu, w której doświadczony tester używa listy ogólnych zagadnień, które powinny być odnotowywane, sprawdzone, zapamiętane, lub zbioru reguł bądź kryteriów, względem których produkt ma być sprawdzany.",
+      "Podejście do testowania, w którym testerzy dynamicznie projektują i przeprowadzają testy na podstawie swojej wiedzy, badania obiektu testów i wyników z poprzednich testów."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Która z poniższych opcji należy do kategorii technik czarnoskrzynkowych?",
+    "answers": [
+      "Technika oparta na analizie architektury.",
+      "Technika sprawdzająca, czy przedmiot testów działa zgodnie z projektem szczegółowym.",
+      "Technika oparta na wiedzy o poprzednich defektach albo na ogólnej wiedzy o awariach.",
+      "Technika oparta na wymaganiach formalnych."
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Rozważmy następujące stwierdzenie dotyczące pokrycia decyzji:\nGdy kod zawiera tylko pojedynczą instrukcję if i nie zawiera żadnych instrukcji pętli lub CASE, a także wykonanie instrukcji if nie jest zagnieżdżone w kodzie, każdy wykonywany test pozwoli uzyskać pokrycie decyzji na poziomie 50%.\nKtóra z poniższych odpowiedzi jest poprawna?",
+    "answers": [
+      "Stwierdzenie to jest zgodne z prawdą. Każdy test zapewnia 100% pokrycia instrukcji kodu, a w rezultacie 50% pokrycia decyzji.",
+      "Stwierdzenie to jest zgodne z prawdą. Każdy pojedynczy, wykonany test powoduje, że instrukcja if daje albo wartość prawdziwą, albo wartość fałszywą.",
+      "Stwierdzenie to jest niezgodne z prawdą. Pojedynczy przypadek może zagwarantować w tej sytuacji tylko 25% pokrycia decyzji.",
+      "Stwierdzenie to jest niezgodne z prawdą. Stwierdzenie jest zbyt szerokie, ponieważ może być poprawne lub nie w zależności od testowanego oprogramowania."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Która z poniższych odpowiedzi NAJLEPIEJ opisuje pokrycie instrukcji kodu?",
+    "answers": [
+      "Jest to miara pokazująca odsetek wykonanych przypadków testowych.",
+      "Jest to miara pokazująca odsetek instrukcji wykonywalnych, które zostały przetestowane przez zestaw testowy.",
+      "Jest to miara pokazująca liczbę instrukcji w kodzie źródłowym, które zostały wykonane przez zaliczone przypadki testowe.",
+      "Jest to miara pokazująca, czy wszystkie instrukcje zostały pokryte (zwracana jest wartość prawda/fałsz)."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Które stwierdzenie dotyczące relacji między pokryciem instrukcji kodu a pokryciem decyzji jest prawdziwe?",
+    "answers": [
+      "Stuprocentowe pokrycie decyzji gwarantuje stuprocentowe pokrycie instrukcji kodu.",
+      "Stuprocentowe pokrycie instrukcji kodu gwarantuje stuprocentowe pokrycie decyzji.",
+      "50% pokrycie decyzji gwarantuje także 50% pokrycie instrukcji kodu.",
+      "Pokrycie decyzji nie może nigdy osiągnąć 100%."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "W której z poniższych sytuacji zalecane jest testowanie eksploracyjne:",
+    "answers": [
+      "Gdy presja czasu wymaga przyspieszenia wykonania testów już zdefiniowanych.",
+      "Gdy system jest rozwijany stopniowo i żadna karta opisu testu nie jest dostępna.",
+      "Gdy dostępni są testerzy posiadający wystarczającą wiedzę na temat podobnych aplikacji i technologii.",
+      "Gdy istnieje już zaawansowana wiedza o systemie i należy przedstawić dowody, że należy go intensywnie przetestować."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Program musi obliczyć wysokość premii dla pracownika. Premia nie może mieć wartości ujemnej, może natomiast zostać zredukowana do zera. Jej wysokość zależy od stażu pracy.\nWyróżniono następujące kategorie:\n● 2 lata lub mniej\n● więcej niż 2 lata, ale mniej niż 5 lat\n● nie mniej niż 5 lat ale nie więcej niż 10 lat\n● więcej niż 10 lat.\nIle przypadków testowych jest niezbędnych, jeśli do przetestowania procesu obliczania wysokości premii potrzebne są tylko te zaprojektowane w oparciu o podział na klasy równoważności dla przypadków poprawnych?",
+    "answers": [
+      "3",
+      "5",
+      "2",
+      "4"
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "System kontroli i raportowania wykroczeń drogowych posiada następującą charakterystykę:\nSystem mierzy prędkość samochodu w km/h, a odczyty podawane są jako liczby naturalne.\nDo 50 km/h włącznie nie zostanie wykonana żadna akcja.\nPomiędzy 50 km/h a 55 km/h włącznie kierowca otrzyma ostrzeżenie.\nPomiędzy 55 km/h a 60 km/h włącznie kierowca otrzyma mandat.\nPowyżej 60 km/h kierowcy zostanie odebrane prawo jazdy.\nKtóre z poniższych wartości (km/h) są przypadkami testowymi do analizy wartości brzegowych, gdy sprawdzane są tylko dwie wartości brzegowe z klas równoważności.",
+    "answers": [
+      "0, 49, 50, 54, 59, 60.",
+      "50, 55, 60.",
+      "49, 50, 54, 55, 60, 62.",
+      "50, 51, 55, 56, 60, 61."
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Pracownicy firmy otrzymują premie za osiągnięcie indywidualnego celu pod warunkiem\nprzepracowania w firmie ponad 1 roku.\nWarunki te ilustruje poniższa tablica decyzyjna:\nID przypadku testowego T1 T2 T3 T4\nWarunki\nW1 Zatrudnienie od ponad 1 roku? TAK NIE NIE TAK\nW2 Cel uzgodniony? NIE NIE TAK TAK\nW3 Cel osiągnięty? NIE NIE TAK TAK\nAkcja\nWypłata premii? NIE NIE NIE TAK\nKtóry z poniższych przypadków testowych przedstawia sytuację, która rzeczywiście może się\nzdarzyć w życiu, a której brakuje w powyższej tablicy decyzyjnej?",
+    "answers": [
+      "Warunek W1 = TAK, Warunek W2 = NIE, Warunek W3 = TAK, Akcja = NIE",
+      "Warunek W1 = TAK, Warunek W2 = TAK, Warunek W3 = NIE, Akcja = TAK",
+      "Warunek W1 = NIE, Warunek W2 = NIE, Warunek W3 = TAK, Akcja = NIE",
+      "Warunek W1 = NIE, Warunek W2 = TAK, Warunek W3 = NIE, Akcja = NIE"
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Pytanie nr 28 zawiera diagram. Nie można wyświetlić go w konsolii. Prawidłowa odpowiedź to: ",
+    "answers": [
+      "answerA",
+      "answerB",
+      "answerC",
+      "answerD"
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "W przypadku aplikacji do odtwarzania wideo obowiązuje następujące wymaganie: aplikacja musi umożliwiać odtwarzanie wideo na ekranach o następującej rozdzielczości:\n1. 640×480\n2. 1280×720\n3. 1600×1200\n4. 1920×1080\nKtóry z poniższych przypadków testowych jest rezultatem zastosowania technik podziału na klasy równoważności w odniesieniu do tego wymagania?",
+    "answers": [
+      "Zweryfikowanie, czy aplikacja umożliwia odtwarzanie filmu wideo na ekranie o rozdzielczości 1920×1080 (1 przypadek testowy).",
+      "Zweryfikowanie, czy aplikacja umożliwia odtwarzanie filmu wideo na ekranach o rozdzielczości 640×480 i 1920×1080 (2 przypadki testowe).",
+      "Zweryfikowanie, czy aplikacja umożliwia odtwarzanie filmu wideo we wszystkich rozdzielczościach wymienionych w wymaganiu (4 przypadki testowe).",
+      "Zweryfikowanie, czy aplikacja umożliwia odtwarzanie filmu wideo w dowolnej z rozdzielczości wymienionych w wymaganiu (1 przypadek testowy)."
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Które z poniższych stwierdzeń NAJLEPIEJ opisuje podział zadań pomiędzy kierownikiem testów a testerem?",
+    "answers": [
+      "Kierownik testów planuje czynności testowe i wybiera standardy, których należy przestrzegać, a tester wybiera stosowane narzędzia i sposób ich użycia.",
+      "Kierownik testów planuje i nadzoruje czynności testowe, a tester automatyzuje testy.",
+      "Kierownik testów planuje, monitoruje i nadzoruje czynności testowe, a tester projektuje testy i podejmuje decyzje o wdrożeniu testowanego obiektu.",
+      "Kierownik testów planuje i organizuje czynności testowe oraz specyfikuje przypadki testowe, a tester ustala priorytety i wykonuje testy"
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Która z poniższych miar jest NAJBARDZIEJ przydatna w kontekście monitorowania\nwykonywania testów?",
+    "answers": [
+      "Odsetek wykonanych przypadków testowych.",
+      "Średnia liczba testerów zaangażowanych w wykonanie testów.",
+      "Pokrycie wymagań przez kod źródłowy.",
+      "Odsetek przypadków testowych już utworzonych i sprawdzonych."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Który z poniższych czynników może mieć wpływ na (początkowy) plan testów i być częścią tego planu?",
+    "answers": [
+      "Ograniczenia budżetowe.",
+      "Dziennik testów.",
+      "Współczynnik awarii.",
+      "Przypadki użycia."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Która z poniższych list zawiera tylko typowe kryteria wyjścia z testowania?",
+    "answers": [
+      "Miary niezawodności, pokrycie testowe, harmonogram oraz status dotyczący naprawianych defektów i pozostałych ryzyk.",
+      "Miary niezawodności, pokrycie testowe, stopień niezależności testerów i kompletność produktu.",
+      "Miary niezawodności, pokrycie testowe, koszt testu, dostępność środowiska testowego, czas do wprowadzenia produktu na rynek i kompletność produktu.",
+      "Czas do wprowadzenia produktu na rynek, pozostałe defekty, kwalifikacje testerów, dostępność testowalnych przypadków użycia, odpowiedni poziom pokrycia i koszty testów."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Który z poniższych elementów NIE jest uwzględniany w sumarycznym raporcie z testów?",
+    "answers": [
+      "Zdefiniowane ścieżki/ kryteria niezaliczenia i cele testowania.",
+      "Odstępstwa od wybranego podejścia do testowania.",
+      "Pomiary rzeczywistego postępu w odniesieniu do kryteriów wyjścia.",
+      "Ocena jakości testowanego obiektu."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "W ramach projektu opracowano „inteligentny” termostat grzewczy. Algorytmy sterowania termostatu zostały zamodelowane jako modele Matlab / Simulink i są uruchamiane na serwerze podłączonym do Internetu. Termostat wykorzystuje specyfikacje serwera do uruchomienia zaworów grzewczych.\nKierownik testów zdefiniował następującą strategię testów / podejście testowe w planie testów:\n1. Test akceptacyjny dla całego systemu jest wykonywany jako test oparty na\ndoświadczeniu.\n2. Algorytmy sterowania na serwerze są sprawdzane w odniesieniu do branżowego\nstandardu regulacji dotyczącego oszczędzania energii.\n3. Test funkcjonalny termostatu przeprowadzany jest jako test oparty na ryzyku.\n4. Testy bezpieczeństwa danych / komunikacji przez Internet są przeprowadzane\nwspólnie z zewnętrznymi ekspertami ds. bezpieczeństwa.\n\nJakie cztery typowe strategie / podejścia testowe zostały wdrożone przez kierownika testów w planie testów?",
+    "answers": [
+      "Metodyczna, analityczna, reaktywna i strategia testowa minimalizująca regresję.",
+      "Analityczna, strategia testowa zgodna ze standardem, konsultatywna i reaktywna.",
+      "Oparta na modelu, metodyczna, analityczna i konsultatywna.",
+      "Strategia testowa minimalizująca regresję, konsultatywna, reaktywna i metodyczna."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Który z poniższych elementów jest charakterystyczny dla szacowania testów techniką opartą na miarach?",
+    "answers": [
+      "Wykorzystanie budżetu we wcześniejszym podobnym projekcie związanym z testowaniem.",
+      "Łączne doświadczenie zdobyte dzięki rozmowom z kierownikami testów.",
+      "Łączne oszacowanie nakładu pracy uzgodnione z programistami.",
+      "Średnia kalkulacji zebranych od ekspertów merytorycznych."
+    ],
+    "right_answer": "a"
+  },
+    {
+    "question": "Pytanie nr 37 zawiera diagram. Nie można wyświetlić go w konsolii. Prawidłowa odpowiedź to: C",
+    "answers": [
+      "answerA",
+      "answerB",
+      "answerC",
+      "answerD"
+    ],
+    "right_answer": "c"
+  },
+    {
+    "question": "Testujesz nową wersję oprogramowania do ekspresu do kawy. Urządzenie może parzyć różne rodzaje kawy w oparciu o cztery różne parametry: wielkość napoju, ilość cukru, dodatek mleka i rodzaj syropu. Kryteria są następujące:\n• Wielkość kawy (mała, średnia, duża).\n• Ilość cukru (brak, 1 jednostka, 2 jednostki, 3 jednostki, 4 jednostki).\n• Mleko (tak lub nie).\n• Syrop smakowy (brak, karmel, orzech laskowy, wanilia).\nSporządzasz raport o defekcie zawierający następujące informacje:\nTytuł: Niska temperatura kawy.\nKrótkie podsumowanie: Po wybraniu kawy z mlekiem czas przyrządzania napoju jest zbyt\ndługi, a temperatura jest zbyt niska (poniżej 40 °C).\nOczekiwany rezultat: Kawa powinna mieć standardową temperaturę (około 75°C).\nPoziom ryzyka: Średnie.\nPriorytet: Normalny.\nJaką cenną informację pominięto w powyższym zgłoszeniu defektu?",
+    "answers": [
+      "Rzeczywisty rezultat testu.",
+      "Dane identyfikujące testowany ekspres.",
+      "Status defektu.",
+      "Pomysły dotyczące usprawnienia przypadku testowego."
+    ],
+    "right_answer": "b"
+  },
+    {
+    "question": "Która z poniższych korzyści może NAJPRAWDOPODOBNIEJ wynikać z automatyzacji testowania?",
+    "answers": [
+      "Łatwość tworzenia testów regresji.",
+      "Łatwość zapewnienia kontroli wersji w odniesieniu do zasobów testowych.",
+      "Łatwość projektowania testów na potrzeby testowania zabezpieczeń.",
+      "Łatwość wykonywania testów regresji."
+    ],
+    "right_answer": "d"
+  },
+    {
+    "question": "Które z poniższych narzędzi testowych nadaje się najbardziej dla programistów, a nie dla testerów?",
+    "answers": [
+      "Narzędzie do zarządzania wymaganiami.",
+      "Narzędzie do zarządzania konfiguracją.",
+      "Narzędzie do analizy statycznej.",
+      "Narzędzie do testowania wydajności."
+    ],
+    "right_answer": "c"
+  }
 ]
