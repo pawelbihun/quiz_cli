@@ -16,7 +16,6 @@ class Question:
         self.right_answer: str = right_answer
 
     def show_with_answers(self, number_of_question: int) -> None:
-        # print(f'Nr {number_of_question}:\n\t\t\t?????\n{self.question}\n\t\t\t?????\n\n')
         print(f' Question nr {number_of_question}')
         self.print_question(self.question, self.do_tabs())
         answers = (tuple(zip(self.answers_letters_list, self.answers)))
